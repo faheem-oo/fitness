@@ -20,7 +20,7 @@ export default function Trainer() {
             <div className="relative rounded-3xl overflow-hidden border border-slate-200 shadow-premium">
               <img
                 src={heroImage}
-                alt="Marcus Tran - Certified Trainer"
+                alt="Manoj Thakur - Certified Trainer"
                 className="w-full h-auto object-cover transition-all duration-700"
               />
             </div>
@@ -47,7 +47,7 @@ export default function Trainer() {
                 "Strength isn't just about lifting heavier — it's about showing up
                 consistently and becoming the strongest version of yourself."
               </p>
-              <p className="mt-2 text-xs font-semibold text-brand-700 uppercase tracking-wider">— Marcus Tran, Head Coach</p>
+              <p className="mt-2 text-xs font-semibold text-brand-700 uppercase tracking-wider">— Manoj Thakur, Head Coach</p>
             </div>
           </div>
         </div>

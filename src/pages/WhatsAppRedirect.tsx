@@ -32,7 +32,7 @@ export default function WhatsAppRedirect() {
                 <span>✓</span>
               </div>
               <div>
-                <div className="font-medium text-slate-900">Coach: Marcus Tran</div>
+                <div className="font-medium text-slate-900">Coach: Manoj Thakur</div>
                 <div className="text-xs text-slate-500">Certified Trainer • FitPro Academy</div>
               </div>
             </div>
