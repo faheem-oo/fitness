@@ -4,8 +4,8 @@ import { TESTIMONIALS } from '@/data/courseData'
 export default function Testimonials() {
   return (
     <section className="section bg-white" id="testimonials">
-      <div className="max-w-7xl mx-auto px-6 sm:px-12 lg:px-24">
-        <div className="section-header text-center">
+      <div className="max-w-7xl mx-auto">
+        <div className="section-header text-center" data-reveal>
           <div className="section-badge mx-auto">Student Results</div>
           <h2 className="section-title">Trusted by <br />our students</h2>
           <p className="section-subtitle">
@@ -13,7 +13,7 @@ export default function Testimonials() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-6" data-reveal data-reveal-delay="80">
           {TESTIMONIALS.map((t) => (
             <TestimonialCard key={t.id} testimonial={t} />
           ))}

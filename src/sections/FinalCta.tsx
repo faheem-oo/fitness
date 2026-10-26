@@ -5,7 +5,7 @@ export default function FinalCta() {
   return (
     <section className="relative overflow-hidden py-24 px-6 sm:px-12 lg:px-24">
       <div className="absolute inset-0 bg-brand-600/5" />
-      <div className="relative z-10 max-w-4xl mx-auto rounded-3xl overflow-hidden border border-brand-100 bg-white shadow-premium">
+      <div className="relative z-10 max-w-4xl mx-auto rounded-3xl overflow-hidden border border-brand-100 bg-white shadow-premium" data-reveal>
         <div className="p-8 md:p-12">
           <div className="flex flex-col items-center text-center justify-center p-6 md:p-0">
             <h2 className="text-3xl md:text-4xl font-bold text-slate-900 leading-tight mb-4">

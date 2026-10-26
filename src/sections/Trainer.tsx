@@ -4,7 +4,7 @@ import heroImage from '@/assets/hero.png'
 export default function Trainer() {
   return (
     <section className="section bg-white" id="trainer">
-      <div className="max-w-7xl mx-auto px-6 sm:px-12 lg:px-24">
+      <div className="max-w-7xl mx-auto">
         <div className="section-header text-center">
           <div className="section-badge mx-auto">Trainer Profile</div>
           <h2 className="section-title">Meet your <br />coach</h2>
@@ -15,7 +15,7 @@ export default function Trainer() {
         </div>
 
         <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
-          <div className="relative group">
+          <div className="relative group" data-reveal>
             <div className="absolute -inset-1 bg-gradient-to-r from-brand-600 to-slate-900 rounded-3xl blur opacity-25 group-hover:opacity-40 transition-opacity duration-500" />
             <div className="relative rounded-3xl overflow-hidden border border-slate-200 shadow-premium">
               <img
@@ -24,24 +24,9 @@ export default function Trainer() {
                 className="w-full h-auto object-cover transition-all duration-700"
               />
             </div>
-            <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-2xl shadow-xl border border-slate-100">
-              <div className="flex items-center gap-3 mb-4">
-                <div className="w-10 h-10 rounded-full bg-brand-600 text-white flex items-center justify-center font-bold">
-                  MT
-                </div>
-                <div>
-                  <div className="font-bold text-slate-900">Marcus Tran</div>
-                  <div className="text-xs text-brand-600 font-semibold">NSCA-CPT • Precision Nutrition L1</div>
-                </div>
-              </div>
-              <div className="grid grid-cols-2 gap-4">
-                <StatItem value="10+" label="Years Experience" />
-                <StatItem value="500+" label="Students Trained" />
-              </div>
-            </div>
           </div>
 
-          <div className="space-y-6">
+          <div className="space-y-6" data-reveal data-reveal-delay="120">
             <h3 className="text-2xl font-bold text-slate-900">Qualifications & Approach</h3>
             <p className="text-slate-600 leading-relaxed">
               Marcus is a certified personal trainer and nutrition coach who has
@@ -68,15 +53,6 @@ export default function Trainer() {
         </div>
       </div>
     </section>
-  )
-}
-
-function StatItem({ value, label }: { value: string; label: string }) {
-  return (
-    <div className="text-center">
-      <div className="text-brand-600 font-bold text-xl">{value}</div>
-      <div className="text-xs text-slate-500 uppercase tracking-wider">{label}</div>
-    </div>
   )
 }
 

@@ -10,7 +10,7 @@ export default function CourseDetails() {
       <section className="relative py-20 sm:py-28 lg:py-36 bg-slate-900 overflow-hidden">
         <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=1200&q=80')] bg-cover bg-center opacity-50" />
         <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/60 to-black" />
-        <div className="relative z-10 max-w-7xl mx-auto px-6 sm:px-12 lg:px-24 text-center">
+        <div className="relative z-10 max-w-7xl mx-auto px-6 sm:px-12 lg:px-24 text-center" data-reveal>
           <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-semibold text-brand-400 bg-brand-500/10 border border-brand-500/20 mb-6">
             <Clock size={14} className="" /> 12-Week Program
           </span>
@@ -31,8 +31,8 @@ export default function CourseDetails() {
       </section>
 
       <section className="section bg-white" id="overview">
-        <div className="max-w-4xl mx-auto px-6 sm:px-12 lg:px-24">
-          <div className="grid lg:grid-cols-3 gap-8">
+        <div className="max-w-4xl mx-auto">
+          <div className="grid lg:grid-cols-3 gap-8" data-reveal>
             <div className="lg:col-span-2 space-y-8">
               <div className="prose prose-lg text-slate-600 max-w-none">
                 <p className="lead text-lg font-medium text-slate-900 mb-4">{COURSE.tagline}</p>
@@ -75,12 +75,12 @@ export default function CourseDetails() {
       </section>
 
       <section className="section bg-slate-50" id="course-modules">
-        <div className="max-w-7xl mx-auto px-6 sm:px-12 lg:px-24">
-          <div className="section-header text-center mb-12">
+        <div className="max-w-7xl mx-auto">
+          <div className="section-header text-center mb-12" data-reveal>
             <div className="section-badge mx-auto">Curriculum</div>
             <h2 className="section-title">Course <br />modules</h2>
           </div>
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6" data-reveal data-reveal-delay="80">
             {MODULES.map((module, index) => (
               <ModuleCard key={index} module={module} />
             ))}
@@ -89,12 +89,12 @@ export default function CourseDetails() {
       </section>
 
       <section className="section bg-white" id="course-testimonials">
-        <div className="max-w-7xl mx-auto px-6 sm:px-12 lg:px-24">
-          <div className="section-header text-center mb-12">
+        <div className="max-w-7xl mx-auto">
+          <div className="section-header text-center mb-12" data-reveal>
             <div className="section-badge mx-auto">Student Results</div>
             <h2 className="section-title">What students <br />say</h2>
           </div>
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-6" data-reveal data-reveal-delay="80">
             {TESTIMONIALS.map((t) => (
               <TestimonialCard key={t.id} testimonial={t} />
             ))}
@@ -103,7 +103,7 @@ export default function CourseDetails() {
       </section>
 
       <section className="relative py-24 px-6 sm:px-12 lg:px-24">
-        <div className="relative z-10 max-w-3xl mx-auto rounded-3xl overflow-hidden border border-brand-100 bg-brand-600 shadow-[0_0_60px_-15px_rgb(220,38,38,0.35)]">
+        <div className="relative z-10 max-w-3xl mx-auto rounded-3xl overflow-hidden border border-brand-100 bg-brand-600 shadow-[0_0_60px_-15px_rgb(220,38,38,0.35)]" data-reveal>
           <div className="p-8 md:p-16 text-center">
             <h2 className="text-3xl font-bold text-white mb-4">Ready to begin?</h2>
             <p className="text-white/80 text-lg mb-8 max-w-xl mx-auto">

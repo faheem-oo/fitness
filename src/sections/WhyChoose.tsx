@@ -26,8 +26,8 @@ export default function WhyChoose() {
 
   return (
     <section className="section bg-slate-50" id="why">
-      <div className="max-w-7xl mx-auto px-6 sm:px-12 lg:px-24">
-        <div className="section-header text-center">
+      <div className="max-w-7xl mx-auto">
+        <div className="section-header text-center" data-reveal>
           <div className="section-badge mx-auto">Why FitPro?</div>
           <h2 className="section-title">Why choose <br />this course?</h2>
           <p className="section-subtitle">
@@ -35,7 +35,7 @@ export default function WhyChoose() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6" data-reveal data-reveal-delay="80">
           {features.map((feature) => (
             <FeatureCard key={feature.title} feature={feature} />
           ))}

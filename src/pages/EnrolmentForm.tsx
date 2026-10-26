@@ -51,15 +51,15 @@ export default function EnrolmentForm() {
   return (
     <Layout>
       <section className="section py-12 sm:py-20">
-        <div className="max-w-2xl mx-auto px-6 sm:px-12 lg:px-24">
+        <div className="max-w-2xl mx-auto">
           <LinkBack />
 
-          <div className="text-center mb-12">
+          <div className="text-center mb-12" data-reveal>
             <h2 className="text-3xl font-bold text-slate-900 mb-3">Reserve Your Spot</h2>
             <p className="text-slate-600">Complete the enrolment form to secure your place in the program.</p>
           </div>
 
-          <div className="mb-8 flex flex-col sm:flex-row sm:items-center justify-between gap-4 rounded-2xl border border-slate-200 bg-slate-50 p-5">
+          <div className="mb-8 flex flex-col sm:flex-row sm:items-center justify-between gap-4 rounded-2xl border border-slate-200 bg-slate-50 p-5" data-reveal data-reveal-delay="80">
             <div>
               <div className="text-xs font-semibold uppercase tracking-wider text-slate-500 mb-1">
                 Selected plan
@@ -78,13 +78,13 @@ export default function EnrolmentForm() {
           </div>
 
           {/* Progress steps */}
-          <div className="flex items-center justify-between mb-10 px-2">
+          <div className="flex items-center justify-between mb-10 px-2" data-reveal data-reveal-delay="120">
             {[1, 2, 3].map((n) => (
               <StepIndicator key={n} n={n} step={step} />
             ))}
           </div>
 
-          <form onSubmit={handleSubmit} className="space-y-6">
+          <form onSubmit={handleSubmit} className="space-y-6" data-reveal data-reveal-delay="160">
             {step === 1 && (
               <div className="space-y-6">
                 {fields.map((field) => (
@@ -124,7 +124,7 @@ export default function EnrolmentForm() {
             </div>
           </form>
 
-          <div className="mt-12 text-center">
+          <div className="mt-12 text-center" data-reveal data-reveal-delay="200">
             <p className="text-sm text-slate-500 mb-2">Prefer to enrol via WhatsApp?</p>
             <a href="https://wa.me/15550000000" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-brand-600 font-semibold hover:text-brand-700">
               <Phone size={16} /> Chat with our coach

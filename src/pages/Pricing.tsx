@@ -41,7 +41,7 @@ export default function PricingPage() {
       <section className="relative py-20 sm:py-28 lg:py-32 bg-slate-900 overflow-hidden">
         <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1200&q=80')] bg-cover bg-center opacity-50" />
         <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/60 to-black" />
-        <div className="relative z-10 max-w-4xl mx-auto px-6 sm:px-12 lg:px-24 text-center">
+        <div className="relative z-10 max-w-4xl mx-auto px-6 sm:px-12 lg:px-24 text-center" data-reveal>
           <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-semibold text-brand-400 bg-brand-500/10 border border-brand-500/20 mb-6">
             <Sparkles size={14} /> Pricing
           </span>
@@ -68,8 +68,8 @@ export default function PricingPage() {
 
       {/* Plans */}
       <section className="section bg-white" id="plans">
-        <div className="max-w-7xl mx-auto px-6 sm:px-12 lg:px-24">
-          <div className="section-header">
+        <div className="max-w-7xl mx-auto">
+          <div className="section-header" data-reveal>
             <div className="section-badge mx-auto">Plans</div>
             <h2 className="section-title">Choose your plan</h2>
             <p className="section-subtitle">
@@ -78,7 +78,7 @@ export default function PricingPage() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto items-stretch">
+          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto items-stretch" data-reveal data-reveal-delay="80">
             {PRICING_PLANS.map((plan) => (
               <article
                 key={plan.id}
@@ -134,8 +134,8 @@ export default function PricingPage() {
 
       {/* Included in every plan */}
       <section className="section bg-slate-50">
-        <div className="max-w-7xl mx-auto px-6 sm:px-12 lg:px-24">
-          <div className="section-header">
+        <div className="max-w-7xl mx-auto">
+          <div className="section-header" data-reveal>
             <div className="section-badge mx-auto">Included</div>
             <h2 className="section-title">Every plan includes</h2>
             <p className="section-subtitle">
@@ -144,7 +144,7 @@ export default function PricingPage() {
             </p>
           </div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6" data-reveal data-reveal-delay="80">
             {INCLUDED.map(({ icon: Icon, title, description }) => (
               <div key={title} className="card p-6">
                 <div className="w-11 h-11 rounded-xl bg-brand-100 flex items-center justify-center mb-4">
@@ -156,7 +156,7 @@ export default function PricingPage() {
             ))}
           </div>
 
-          <div className="mt-12 flex flex-col sm:flex-row items-center justify-center gap-3 text-sm text-slate-500">
+          <div className="mt-12 flex flex-col sm:flex-row items-center justify-center gap-3 text-sm text-slate-500" data-reveal data-reveal-delay="140">
             <ShieldCheck size={18} className="text-brand-600" />
             <span>Try the full program risk-free for 14 days. If it's not for you, we'll refund you.</span>
           </div>
@@ -165,7 +165,7 @@ export default function PricingPage() {
 
       {/* Final CTA */}
       <section className="relative py-24 px-6 sm:px-12 lg:px-24">
-        <div className="relative z-10 max-w-3xl mx-auto rounded-3xl overflow-hidden border border-brand-100 bg-brand-600 shadow-[0_0_60px_-15px_rgb(220,38,38,0.35)]">
+        <div className="relative z-10 max-w-3xl mx-auto rounded-3xl overflow-hidden border border-brand-100 bg-brand-600 shadow-[0_0_60px_-15px_rgb(220,38,38,0.35)]" data-reveal>
           <div className="p-8 md:p-16 text-center">
             <h2 className="text-3xl font-bold text-white mb-4">Ready to begin?</h2>
             <p className="text-white/80 text-lg mb-8 max-w-xl mx-auto">

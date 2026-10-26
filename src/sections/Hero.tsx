@@ -13,10 +13,11 @@ export default function Hero() {
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
 
           {/* Content */}
-          <div className="space-y-6">
+          <div className="space-y-6" data-reveal>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-900 tracking-tight leading-tight">
-              Transform Your Body in <br />
-              <span className="text-brand-600 italic">Just 12 Weeks</span>
+              Transform Your Body in
+              <br className="hidden sm:block" />
+              <span className="text-brand-600 italic"> Just 12 Weeks</span>
             </h1>
 
             <p className="text-lg sm:text-xl text-slate-600 leading-relaxed max-w-lg">
@@ -24,8 +25,8 @@ export default function Hero() {
               progressive workouts, and nutrition guidance to help you build strength, burn fat, and feel your best.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4 pt-4">
-              <Link to="/enrol" className="btn-primary">
+            <div className="flex flex-col flex-wrap sm:flex-row gap-4 pt-4">
+              <Link to="/enrol" className="btn-primary whitespace-nowrap">
                 <ArrowRight size={20} /> Enrol Now
               </Link>
               <a
@@ -49,7 +50,7 @@ export default function Hero() {
           </div>
 
           {/* Trainer image/video placeholder */}
-          <div className="relative group">
+          <div className="relative group" data-reveal data-reveal-delay="120">
             <div className="absolute -inset-1 bg-gradient-to-r from-brand-600 to-slate-900 rounded-2xl blur opacity-30 group-hover:opacity-50 transition-opacity duration-500" />
             {/* Trainer image - clickable to view course trailer */}
             <a
@@ -79,11 +80,6 @@ export default function Hero() {
             </a>
           </div>
         </div>
-      </div>
-
-      {/* Scroll indicator */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
-        <ArrowRight size={24} className="text-slate-400" />
       </div>
     </section>
   )

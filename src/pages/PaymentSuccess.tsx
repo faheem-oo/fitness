@@ -19,7 +19,7 @@ export default function PaymentSuccess() {
   return (
     <Layout>
       <section className="section py-24 sm:py-32">
-        <div className="max-w-2xl mx-auto px-6 sm:px-12 lg:px-24 text-center">
+        <div className="max-w-2xl mx-auto text-center" data-reveal>
           <div className="w-20 h-20 rounded-full bg-brand-100 flex items-center justify-center mx-auto mb-8 animate-pulse">
             <div className="w-12 h-12 rounded-full bg-brand-600 flex items-center justify-center animate-bounce">
               <CheckCircle size={28} className="text-white" />
@@ -53,7 +53,7 @@ export default function PaymentSuccess() {
             </div>
           </div>
 
-          <div className="space-y-4">
+          <div className="flex flex-col sm:flex-row sm:flex-wrap sm:justify-center gap-4">
             <Link to="/" className="btn-primary w-full sm:w-auto">
               Return Home <ArrowRight size={18} />
             </Link>

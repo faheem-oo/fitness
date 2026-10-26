@@ -16,7 +16,7 @@ export default function WhatsAppRedirect() {
   return (
     <Layout>
       <section className="section py-24 sm:py-32 min-h-[60vh] flex flex-col justify-center">
-        <div className="max-w-md mx-auto px-6 text-center">
+        <div className="max-w-md mx-auto text-center" data-reveal>
           <div className="w-16 h-16 rounded-full bg-brand-100 flex items-center justify-center mx-auto mb-8 animate-pulse">
             <Phone size={32} className="text-brand-400" />
           </div>

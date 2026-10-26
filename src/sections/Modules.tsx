@@ -5,8 +5,8 @@ import { IconRenderer } from '@/components/IconRenderer'
 export default function Modules() {
   return (
     <section className="section bg-slate-50" id="modules">
-      <div className="max-w-7xl mx-auto px-6 sm:px-12 lg:px-24">
-        <div className="section-header">
+      <div className="max-w-7xl mx-auto">
+        <div className="section-header" data-reveal>
           <div className="section-badge">
             <ArrowRight size={16} /> Course Modules
           </div>
@@ -18,14 +18,14 @@ export default function Modules() {
         </div>
 
         {/* Benefits grid */}
-        <div className="grid md:grid-cols-3 gap-6 mb-16">
+        <div className="grid md:grid-cols-3 gap-6 mb-16" data-reveal data-reveal-delay="80">
           {BENEFITS.map((benefit, index) => (
             <BenefitCard key={index} benefit={benefit} />
           ))}
         </div>
 
         {/* Modules list */}
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6" data-reveal data-reveal-delay="160">
           {MODULES.map((module, index) => (
             <ModuleCard key={index} module={module} />
           ))}
